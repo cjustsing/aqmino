@@ -1,0 +1,28 @@
+Use case: ui-mockup. Create realistic, production-quality, very refined Apple-native macOS UI mockups with exact readable Chinese.
+This is an extension of the USER-SELECTED existing visual direction, not exploration of new styles. Attached Image 1 is the selected Aqmino · 水序 compact overview and the single source of truth for all visual details.
+Match its layout language faithfully: slim native title bar, three traffic-light controls, translucent pale-gray sidebar, four monochrome sidebar symbols, pale mint selection, charcoal text, flat deep teal active controls (#006F70), native short rounded buttons, time/text fields and switches, gentle frosted popover material, thin gray row separators and a restrained window shadow. Use SF Pro / PingFang SC. Keep compact native UI labels about 13–15 pt, section titles about 17–20 pt, and numeric total about 40 pt. Maintain the reference header "水序" with "Aqmino", and small "…" button. Keep all accents restrained.
+Preserve the same native settings sidebar labels, order and geometry: "提醒", "记录与目标", "通用", "数据". Settings title "水序设置". Settings window logical starting size 640 × 520 pt, never a web dashboard. Popover starting width 360 pt, natural content height up to 560 pt, with a small arrow pointing to the monochrome menu-bar droplet.
+Current-date anchor is 2026-10-10 (Saturday), Asia/Shanghai. Scenario date/time below is deliberately specified for state examples; render the real corresponding weekday correctly. Default reminders Monday–Friday, 09:00–18:00, every 45 minutes. Do not mistakenly show a Saturday active reminder.
+Except when a scenario explicitly enables a USER-SET goal, the goal is OFF; no progress ring, progress percentage, invented daily target or health suggestion.
+These are visual design deliverables, not running code. Preserve exact amounts, counts, action labels and temporal relationships in each specified state. Show the same single selected visual system throughout. Any paired/triple frames depict STATES OF ONE DESIGN, not alternative ideas. Normal functions exist offscreen; do not add accounts, cloud sync, exports, history charts, achievements, AI, workout tracking or new navigation.
+Prefer a plain neutral light-gray presentation background, generous margins and realistic front-on flat UI containers. No decorative pictures, brand logo artwork, wallpaper scenery, arrows linking screens, device bezels, browser chrome, giant headings or marketing copy. Don't put cards inside cards; use spacing and thin native separators. Do not copy the selected reference as an inset thumbnail. Render only the requested new screen/state views.
+Every literal UI string below must be correctly spelled Chinese. Text legibility and unclipped layout are essential. Use specified canvas dimensions, preserving the natural window and popover proportions rather than stretching to fill the canvas.
+
+Asset: settings-records-and-goal.
+Target dimensions: 1536 × 1024 px landscape. Show TWO equal native settings windows side by side, each approximately 640 × 520 logical pt at the same scale, with 72 px outer margins and 60 px gap. No menu-bar popover on this board. These are two states of the SAME "记录与目标" page.
+Sidebar selection in BOTH windows is "记录与目标", using exactly the sidebar from Image 1. Main page title "记录与目标". Shared native form:
+Section label "快捷记录"; row label "容量预设"; three small aligned editable fields reading "150", "250", "350", each with a plain "ml" unit.
+Helper, wrap if needed: "容量需为 1–2000 ml 的整数，且互不相同。"
+Thin divider, section label "每日记录目标".
+LEFT state annotation outside UI "目标关闭".
+Row "设置每日目标" has native switch OFF.
+Helper "关闭时仅显示累计水量和次数。"
+The disabled goal has NO amount field, no percentage and no stop-after-goal switch; collapse that content naturally, do not fill whitespace with additional features.
+RIGHT state annotation "目标开启".
+"设置每日目标" switch ON.
+Row "每日目标", native editable field "1500" with "ml".
+Helper "目标由你自行设定。"
+Row "达标后停止提醒" switch ON.
+Helper "仍可继续记录饮水。"
+Both windows have identical bottom native buttons "取消" and "保存", the latter deep teal. No medical recommendation or arbitrary suggested target. No record/chart/count area; this screen is preferences only.
+Use crisp Chinese text, generous but compact row rhythm and one plain form surface rather than cards. Keep the title bar, sidebar, separators, controls, accent, typography, and window corners faithful to the source.

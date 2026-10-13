@@ -1,0 +1,32 @@
+Create realistic, production-quality UI designs with clear hierarchy, strong typography, and purposeful spacing.
+Use case: ui-mockup.
+Primary request: Aqmino · 水序, a hydration reminder Mac app. Produce high-fidelity interface mockups for its macOS menu-bar popover AND its settings window, as a paired presentation of ONE coherent visual direction.
+Target dimensions: 1536 × 1024 pixels landscape. Natural UI containers: menu-bar popover 360 pt wide with height driven by content, maximum 560 pt; settings window 640 × 520 pt. Show both flat, front-on at the same scale with crisp readable Chinese, ample separation. These are real contained native desktop panels as requested. The small menu-bar fragment must visibly anchor the popover to a monochrome droplet icon; include the little popover arrow. The settings window has the macOS red/yellow/green title-bar controls and a restrained native sidebar, never a browser or tablet.
+Current date anchor: 2026-10-10, Saturday, Asia/Shanghai. Mock view at 10:30 on this date. Reminders are enabled Monday–Friday, 09:00–18:00, every 45 minutes. Saturday is outside schedule. Correct upcoming reminder is Monday 2026-10-12 09:45. Both views MUST use "下次提醒 周一 09:45", no active countdown for Saturday.
+References: attached Image 1 glass-wave icon, Image 2 layered-drop icon, Image 3 minimal-wave icon are brand/mood references, NOT edit targets or screen layouts. Borrow their water identity with very restrained deep teal #006F70 and a hint of pale mint. Keep all three icon candidates unselected; do not place their full-color icons inside the product UI or copy their oversized artwork.
+Style: extremely minimal and refined Apple-native macOS light appearance. Authentic SF Pro and PingFang SC system typography, modest 13–15 pt UI text, precise baselines, charcoal labels, system secondary gray labels, thin low-contrast separators, native compact rounded buttons, switches, checkboxes, time fields and pop-up menus. System-like frosted material on the popover and sidebar, solid off-white window content, delicate native window shadow only. Alignment, typography and negative space carry the design; do not add nested cards, thick borders, glossy/glass droplet hero illustrations, neon, gradients, web dashboard styling, marketing slogans, giant poster headlines, or wallpaper scenery.
+Product scope is reminders + one-click quick hydration recording + today cumulative amount. User daily target is OFF by default. No goal progress ring, progress percentage, 2000 ml target, health advice, streak, history chart, account, cloud/sync, AI, dashboard metrics, device bezel, Dock or browser chrome. Each of the three capacities is an immediate record action, not a capacity selector needing another confirmation.
+Required popover hierarchy and exact content:
+Header "水序", small secondary "Aqmino", small more button "…" at the trailing edge.
+Label "今日已记录"; large "750" with smaller unit "ml"; secondary "3 次记录".
+Single calm reminder row with a small native clock symbol: "下次提醒 周一 09:45". Support caption "工作日 09:00–18:00".
+"记录一杯" label above three immediately actionable buttons "150 ml", "250 ml", "350 ml". Middle 250 ml may be subtly emphasized. Then a discrete action "自定义…".
+"暂停提醒…" is a secondary action. Native footer row "今日记录" at left and "设置…" at right.
+Render a resting state, no success toast, no undo banner occupying empty space.
+Required settings window content:
+Title "水序设置". Sidebar items exactly "提醒" (selected), "记录与目标", "通用", "数据"; native monochrome category symbols if useful.
+Main title "提醒".
+Row "开启提醒" with switch ON.
+Group "提醒计划". "提醒日期" and native day controls "一 二 三 四 五 六 日": Monday through Friday selected, Saturday/Sunday unselected.
+Row "提醒时段" with actual editable native time fields "09:00" and "18:00" separated by "至".
+Row "提醒间隔" with a native pop-up menu "45 分钟".
+Quiet preview "下次提醒 周一 09:45".
+Group "通知". Row "通知权限" and readable status "已开启", with a subtle "系统设置…" action if space allows.
+Row "播放提示音" with switch OFF.
+Native button "发送测试通知"; concise helper "通知权限修改立即生效。" to clarify the system action.
+Window bottom native action row "取消" and "保存". Save can use deep teal tint. Settings apply local app preferences as a saved draft. All text rendered verbatim, sharp, correctly spelled Chinese, no placeholders/lorem ipsum, no extra settings.
+Keep the primary workflow focused; remaining app features exist off screen. No clipping or clutter. Two windows illustrate the SAME single design direction, not two alternative concepts. Avoid any planned numeric option label in the image.
+
+Direction name: 静谧留白.
+Layout strategy: a calm, left-aligned overview. In the popover, use an airy header followed by a left-aligned 48 pt tabular "750" and a quiet small unit. The total is the visual anchor. A single separated reminder row leads into the three compact recording buttons, then restrained secondary actions and footer. The settings window uses a translucent 156 pt sidebar and classic left-label/right-control native form rows, with only two lightweight grouped sections and subtle separators. All forms and totals are left anchored with abundant whitespace. UI surfaces should feel as understated as a polished built-in macOS utility.
+Composition: on a clean warm gray (#ECEDEA) desktop background, place popover left and settings right, vertically aligned near the center. Render natural panel sizes at about 1.25× so typography is readable. The menu-bar fragment sits just above the left popover, with only its small droplet icon and the date/time "10月10日 周六 10:30". Do not include a concept name, external title, numbered label, caption, wallpaper illustration or marketing treatment.

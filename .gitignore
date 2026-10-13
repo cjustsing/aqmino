@@ -1,0 +1,25 @@
+# macOS and local build output
+.DS_Store
+.build/
+.swiftpm/
+/build/
+DerivedData/
+*.xcuserstate
+xcuserdata/
+*.xcarchive
+*.dSYM/
+
+# Python caches
+__pycache__/
+*.py[cod]
+.venv/
+
+# Local configuration and signing credentials
+.env
+.env.*
+!.env.example
+*.p12
+*.pfx
+*.key
+*.mobileprovision
+*.provisionprofile

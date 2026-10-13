@@ -1,0 +1,499 @@
+{
+  "version": "v0.2",
+  "purpose": "Design mock-state examples, not production persistence schema or real user records.",
+  "current_date_anchor": "2026-10-10",
+  "timezone": "Asia/Shanghai",
+  "selected_direction": 3,
+  "default_quick_record_ml": [
+    150,
+    250,
+    350
+  ],
+  "default_schedule": {
+    "weekdays": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "start": "09:00",
+    "end_exclusive": "18:00",
+    "interval_minutes": 45
+  },
+  "menu_states": [
+    {
+      "id": "menu-normal",
+      "label": "正常计时",
+      "local_datetime": "2026-10-12T10:30:00+08:00",
+      "total_ml": 750,
+      "record_count": 3,
+      "daily_goal_enabled": false,
+      "daily_goal_ml": null,
+      "reminders_enabled": true,
+      "notification_permission": "authorized",
+      "record_buttons_enabled": true,
+      "pause_action_enabled": true,
+      "today_records_enabled": true,
+      "next_reminder": "2026-10-12T10:45:00+08:00",
+      "last_record_at": "2026-10-12T10:00:00+08:00",
+      "message": "下一次提醒 10:45",
+      "actions": [
+        "暂停提醒…"
+      ]
+    },
+    {
+      "id": "menu-record-success",
+      "label": "记录成功",
+      "local_datetime": "2026-10-12T10:30:00+08:00",
+      "total_ml": 1000,
+      "record_count": 4,
+      "daily_goal_enabled": false,
+      "daily_goal_ml": null,
+      "reminders_enabled": true,
+      "notification_permission": "authorized",
+      "record_buttons_enabled": true,
+      "pause_action_enabled": true,
+      "today_records_enabled": true,
+      "next_reminder": "2026-10-12T11:15:00+08:00",
+      "last_record_at": "2026-10-12T10:30:00+08:00",
+      "message": "下一次提醒 11:15",
+      "feedback": "已记录 250 ml · 撤销",
+      "feedback_duration_seconds": 10,
+      "actions": [
+        "撤销",
+        "暂停提醒…"
+      ]
+    },
+    {
+      "id": "menu-empty",
+      "label": "暂无记录",
+      "local_datetime": "2026-10-12T10:30:00+08:00",
+      "total_ml": 0,
+      "record_count": 0,
+      "daily_goal_enabled": false,
+      "daily_goal_ml": null,
+      "reminders_enabled": true,
+      "notification_permission": "authorized",
+      "record_buttons_enabled": true,
+      "pause_action_enabled": true,
+      "today_records_enabled": true,
+      "next_reminder": "2026-10-12T10:45:00+08:00",
+      "last_record_at": null,
+      "app_started_at": "2026-10-12T10:00:00+08:00",
+      "message": "下一次提醒 10:45",
+      "secondary": "今天还没有记录",
+      "actions": [
+        "暂停提醒…"
+      ]
+    },
+    {
+      "id": "menu-pause-options",
+      "label": "暂停选项",
+      "local_datetime": "2026-10-12T10:30:00+08:00",
+      "total_ml": 750,
+      "record_count": 3,
+      "daily_goal_enabled": false,
+      "daily_goal_ml": null,
+      "reminders_enabled": true,
+      "notification_permission": "authorized",
+      "record_buttons_enabled": true,
+      "pause_action_enabled": true,
+      "today_records_enabled": true,
+      "next_reminder": "2026-10-12T10:45:00+08:00",
+      "message": "下一次提醒 10:45",
+      "open_menu_items": [
+        "30 分钟",
+        "1 小时",
+        "今日不再提醒"
+      ],
+      "actions": [
+        "暂停提醒…"
+      ]
+    },
+    {
+      "id": "menu-timed-pause",
+      "label": "定时暂停",
+      "local_datetime": "2026-10-12T10:30:00+08:00",
+      "total_ml": 750,
+      "record_count": 3,
+      "daily_goal_enabled": false,
+      "daily_goal_ml": null,
+      "reminders_enabled": true,
+      "notification_permission": "authorized",
+      "record_buttons_enabled": true,
+      "pause_action_enabled": true,
+      "today_records_enabled": true,
+      "next_reminder": null,
+      "pause_until": "2026-10-12T11:00:00+08:00",
+      "message": "已暂停，11:00 恢复",
+      "secondary": "恢复后重新计时。",
+      "actions": [
+        "恢复提醒"
+      ]
+    },
+    {
+      "id": "menu-today-pause",
+      "label": "今日暂停",
+      "local_datetime": "2026-10-12T10:30:00+08:00",
+      "total_ml": 750,
+      "record_count": 3,
+      "daily_goal_enabled": false,
+      "daily_goal_ml": null,
+      "reminders_enabled": true,
+      "notification_permission": "authorized",
+      "record_buttons_enabled": true,
+      "pause_action_enabled": true,
+      "today_records_enabled": true,
+      "next_reminder": null,
+      "paused_local_date": "2026-10-12",
+      "message": "今日已暂停",
+      "secondary": "明天按计划恢复。",
+      "actions": [
+        "恢复提醒"
+      ]
+    },
+    {
+      "id": "menu-not-determined",
+      "label": "待授权",
+      "local_datetime": "2026-10-12T10:30:00+08:00",
+      "total_ml": 750,
+      "record_count": 3,
+      "daily_goal_enabled": false,
+      "daily_goal_ml": null,
+      "reminders_enabled": true,
+      "notification_permission": "notDetermined",
+      "record_buttons_enabled": true,
+      "pause_action_enabled": true,
+      "today_records_enabled": true,
+      "next_reminder": null,
+      "message": "开启通知后接收喝水提醒",
+      "secondary": "仍可记录饮水。",
+      "actions": [
+        "开启通知",
+        "暂停提醒…"
+      ]
+    },
+    {
+      "id": "menu-notifications-denied",
+      "label": "通知被拒绝",
+      "local_datetime": "2026-10-12T10:30:00+08:00",
+      "total_ml": 750,
+      "record_count": 3,
+      "daily_goal_enabled": false,
+      "daily_goal_ml": null,
+      "reminders_enabled": true,
+      "notification_permission": "denied",
+      "record_buttons_enabled": true,
+      "pause_action_enabled": true,
+      "today_records_enabled": true,
+      "next_reminder": null,
+      "message": "通知已关闭，仍可记录饮水",
+      "actions": [
+        "查看系统通知设置",
+        "暂停提醒…"
+      ]
+    },
+    {
+      "id": "menu-notification-center-only",
+      "label": "仅通知中心",
+      "local_datetime": "2026-10-12T10:30:00+08:00",
+      "total_ml": 750,
+      "record_count": 3,
+      "daily_goal_enabled": false,
+      "daily_goal_ml": null,
+      "reminders_enabled": true,
+      "notification_permission": "authorized",
+      "record_buttons_enabled": true,
+      "pause_action_enabled": true,
+      "today_records_enabled": true,
+      "next_reminder": "2026-10-12T10:45:00+08:00",
+      "notification_banner_enabled": false,
+      "notification_center_enabled": true,
+      "message": "提醒将显示在通知中心",
+      "secondary": "下一次提醒 10:45",
+      "actions": [
+        "查看系统通知设置",
+        "暂停提醒…"
+      ]
+    },
+    {
+      "id": "menu-reminders-off",
+      "label": "提醒关闭",
+      "local_datetime": "2026-10-12T10:30:00+08:00",
+      "total_ml": 750,
+      "record_count": 3,
+      "daily_goal_enabled": false,
+      "daily_goal_ml": null,
+      "reminders_enabled": false,
+      "notification_permission": "authorized",
+      "record_buttons_enabled": true,
+      "pause_action_enabled": false,
+      "today_records_enabled": true,
+      "next_reminder": null,
+      "message": "提醒已关闭",
+      "secondary": "仍可记录饮水。",
+      "actions": [
+        "开启提醒"
+      ]
+    },
+    {
+      "id": "menu-outside-schedule",
+      "label": "时段之外",
+      "local_datetime": "2026-10-10T10:30:00+08:00",
+      "total_ml": 750,
+      "record_count": 3,
+      "daily_goal_enabled": false,
+      "daily_goal_ml": null,
+      "reminders_enabled": true,
+      "notification_permission": "authorized",
+      "record_buttons_enabled": true,
+      "pause_action_enabled": true,
+      "today_records_enabled": true,
+      "next_reminder": "2026-10-12T09:45:00+08:00",
+      "message": "下次提醒 周一 09:45",
+      "secondary": "工作日 09:00–18:00",
+      "actions": [
+        "修改时段…",
+        "暂停提醒…"
+      ]
+    },
+    {
+      "id": "menu-goal-reached",
+      "label": "目标达成",
+      "local_datetime": "2026-10-12T10:30:00+08:00",
+      "total_ml": 1500,
+      "record_count": 6,
+      "daily_goal_enabled": true,
+      "daily_goal_ml": 1500,
+      "reminders_enabled": true,
+      "notification_permission": "authorized",
+      "record_buttons_enabled": true,
+      "pause_action_enabled": false,
+      "today_records_enabled": true,
+      "next_reminder": null,
+      "stop_after_goal": true,
+      "progress_fraction": 1,
+      "message": "目标已完成",
+      "secondary": "今日提醒已停止。",
+      "record_section_label": "继续记录",
+      "actions": [
+        "修改目标…"
+      ]
+    },
+    {
+      "id": "menu-snoozed",
+      "label": "稍后提醒",
+      "local_datetime": "2026-10-12T10:30:00+08:00",
+      "total_ml": 750,
+      "record_count": 3,
+      "daily_goal_enabled": false,
+      "daily_goal_ml": null,
+      "reminders_enabled": true,
+      "notification_permission": "authorized",
+      "record_buttons_enabled": true,
+      "pause_action_enabled": true,
+      "today_records_enabled": true,
+      "next_reminder": "2026-10-12T10:40:00+08:00",
+      "last_record_at": "2026-10-12T09:45:00+08:00",
+      "snoozed_at": "2026-10-12T10:30:00+08:00",
+      "message": "将在 10:40 再提醒",
+      "secondary": "本次延后 10 分钟。",
+      "actions": [
+        "暂停提醒…"
+      ]
+    },
+    {
+      "id": "menu-due-inline",
+      "label": "提醒到期",
+      "local_datetime": "2026-10-12T10:30:00+08:00",
+      "total_ml": 750,
+      "record_count": 3,
+      "daily_goal_enabled": false,
+      "daily_goal_ml": null,
+      "reminders_enabled": true,
+      "notification_permission": "authorized",
+      "record_buttons_enabled": true,
+      "pause_action_enabled": true,
+      "today_records_enabled": true,
+      "next_reminder": "2026-10-12T11:15:00+08:00",
+      "last_record_at": "2026-10-12T09:45:00+08:00",
+      "occurrence_at": "2026-10-12T10:30:00+08:00",
+      "popover_foreground_visible": true,
+      "system_banner_for_this_occurrence": false,
+      "message": "喝口水，稍作休息。",
+      "actions": [
+        "10 分钟后",
+        "暂停提醒…"
+      ]
+    },
+    {
+      "id": "menu-dispatch-failed",
+      "label": "发送失败",
+      "local_datetime": "2026-10-12T10:30:00+08:00",
+      "total_ml": 750,
+      "record_count": 3,
+      "daily_goal_enabled": false,
+      "daily_goal_ml": null,
+      "reminders_enabled": true,
+      "notification_permission": "authorized",
+      "record_buttons_enabled": true,
+      "pause_action_enabled": true,
+      "today_records_enabled": true,
+      "next_reminder": "2026-10-12T11:15:00+08:00",
+      "last_record_at": "2026-10-12T09:45:00+08:00",
+      "occurrence_marker_saved": true,
+      "auto_immediate_retry": false,
+      "message": "提醒暂时未能发出",
+      "secondary": "下一次提醒 11:15",
+      "actions": [
+        "查看提醒设置",
+        "发送测试通知",
+        "暂停提醒…"
+      ]
+    },
+    {
+      "id": "menu-custom-input",
+      "label": "自定义记录",
+      "local_datetime": "2026-10-12T10:30:00+08:00",
+      "total_ml": 750,
+      "record_count": 3,
+      "daily_goal_enabled": false,
+      "daily_goal_ml": null,
+      "reminders_enabled": true,
+      "notification_permission": "authorized",
+      "record_buttons_enabled": true,
+      "pause_action_enabled": true,
+      "today_records_enabled": true,
+      "next_reminder": "2026-10-12T10:45:00+08:00",
+      "message": "下一次提醒 10:45",
+      "sheet_title": "记录饮水",
+      "pending_input_ml": 200,
+      "input_range_ml": [
+        1,
+        2000
+      ],
+      "parent_controls_interactive": false,
+      "actions": [
+        "取消",
+        "记录"
+      ]
+    },
+    {
+      "id": "menu-save-failed",
+      "label": "保存失败",
+      "local_datetime": "2026-10-12T10:30:00+08:00",
+      "total_ml": 750,
+      "record_count": 3,
+      "daily_goal_enabled": false,
+      "daily_goal_ml": null,
+      "reminders_enabled": true,
+      "notification_permission": "authorized",
+      "record_buttons_enabled": false,
+      "pause_action_enabled": false,
+      "today_records_enabled": true,
+      "next_reminder": null,
+      "attempted_record_ml": 250,
+      "persisted_next_reminder": "2026-10-12T10:45:00+08:00",
+      "scheduling_suspended": true,
+      "message": "未能保存，请重试",
+      "secondary": "本次 250 ml 尚未记录。",
+      "actions": [
+        "重试"
+      ]
+    },
+    {
+      "id": "menu-read-failed",
+      "label": "读取失败",
+      "local_datetime": "2026-10-12T10:30:00+08:00",
+      "total_ml": null,
+      "record_count": null,
+      "daily_goal_enabled": false,
+      "daily_goal_ml": null,
+      "reminders_enabled": true,
+      "notification_permission": "authorized",
+      "record_buttons_enabled": false,
+      "pause_action_enabled": false,
+      "today_records_enabled": false,
+      "next_reminder": null,
+      "scheduling_suspended": true,
+      "usable_backup": true,
+      "message": "记录暂时无法读取",
+      "summary_placeholder": "— ml",
+      "summary_detail": "今日统计暂不可用",
+      "actions": [
+        "重新读取",
+        "恢复有效备份…"
+      ]
+    }
+  ],
+  "settings_states": [
+    {
+      "id": "settings-goal-off",
+      "page": "记录与目标",
+      "daily_goal_enabled": false,
+      "quick_record_ml": [
+        150,
+        250,
+        350
+      ],
+      "goal_fields_visible": false
+    },
+    {
+      "id": "settings-goal-on",
+      "page": "记录与目标",
+      "daily_goal_enabled": true,
+      "user_entered_goal_ml": 1500,
+      "stop_after_goal": true,
+      "quick_record_ml": [
+        150,
+        250,
+        350
+      ]
+    },
+    {
+      "id": "settings-startup-off",
+      "page": "通用",
+      "startup_actual_enabled": false,
+      "startup_status": "notRegistered",
+      "business_draft_changed": false,
+      "save_enabled": false,
+      "appearance": "system",
+      "language": "system",
+      "resolved_language": "zh-Hans"
+    },
+    {
+      "id": "settings-startup-approval",
+      "page": "通用",
+      "startup_actual_enabled": false,
+      "startup_status": "requiresApproval",
+      "business_draft_changed": false,
+      "save_enabled": false,
+      "system_action": "打开系统设置…",
+      "appearance": "system",
+      "language": "system",
+      "resolved_language": "zh-Hans"
+    },
+    {
+      "id": "settings-data-resting",
+      "page": "数据",
+      "mock_record_count": 68,
+      "deletion_confirmed": false,
+      "business_draft_changed": false,
+      "save_enabled": false
+    },
+    {
+      "id": "settings-data-confirm",
+      "page": "数据",
+      "mock_record_count": 68,
+      "deletion_confirmed": false,
+      "confirmation_title": "删除全部饮水记录？",
+      "confirmation_body": "将删除 68 条记录，且无法恢复。提醒设置会保留。",
+      "confirmation_actions": [
+        "取消",
+        "删除全部记录"
+      ],
+      "save_enabled": false
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+Use case: precise-object-edit, UI mockup correction.
+Edit the attached generated Aqmino · 水序 three-state macOS popover board. Keep canvas 1536 × 1024, all three popovers, geometry, amounts, counts, times, date/weekday labels, fonts, buttons, progress bar, background, spacing and native visual style unchanged.
+Make ONE targeted correction: remove BOTH unnecessary unlabeled switches from the reminder-status rows. Remove the OFF switch in the LEFT "提醒关闭" popover status row, and remove the ON switch in the RIGHT "目标达成" popover status row. Seamlessly fill their spots with the same empty background.
+Keep the LEFT bottom "开启提醒" action as the sole enable entry. Keep the RIGHT bottom "修改目标…" entry as the goal editing action; don't add a resume or other toggle.
+Ensure RIGHT main status is spelled exactly "目标已完成", below it "今日提醒已停止。". Do not change the amount "1500 ml", count "6 次记录", target "1500 ml · 100%" or progress bar.
+Keep middle state Saturday 2026-10-10 10:30 and next Monday 09:45, and left/right Monday 2026-10-12 10:30, all as shown. Current date anchor remains 2026-10-10, Asia/Shanghai.
+No other changes or additions.

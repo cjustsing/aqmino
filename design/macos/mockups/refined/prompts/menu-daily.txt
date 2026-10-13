@@ -1,0 +1,37 @@
+Use case: ui-mockup. Create realistic, production-quality, very refined Apple-native macOS UI mockups with exact readable Chinese.
+This is an extension of the USER-SELECTED existing visual direction, not exploration of new styles. Attached Image 1 is the selected Aqmino · 水序 compact overview and the single source of truth for all visual details.
+Match its layout language faithfully: slim native title bar, three traffic-light controls, translucent pale-gray sidebar, four monochrome sidebar symbols, pale mint selection, charcoal text, flat deep teal active controls (#006F70), native short rounded buttons, time/text fields and switches, gentle frosted popover material, thin gray row separators and a restrained window shadow. Use SF Pro / PingFang SC. Keep compact native UI labels about 13–15 pt, section titles about 17–20 pt, and numeric total about 40 pt. Maintain the reference header "水序" with "Aqmino", and small "…" button. Keep all accents restrained.
+Preserve the same native settings sidebar labels, order and geometry: "提醒", "记录与目标", "通用", "数据". Settings title "水序设置". Settings window logical starting size 640 × 520 pt, never a web dashboard. Popover starting width 360 pt, natural content height up to 560 pt, with a small arrow pointing to the monochrome menu-bar droplet.
+Current-date anchor is 2026-10-10 (Saturday), Asia/Shanghai. Scenario date/time below is deliberately specified for state examples; render the real corresponding weekday correctly. Default reminders Monday–Friday, 09:00–18:00, every 45 minutes. Do not mistakenly show a Saturday active reminder.
+Except when a scenario explicitly enables a USER-SET goal, the goal is OFF; no progress ring, progress percentage, invented daily target or health suggestion.
+These are visual design deliverables, not running code. Preserve exact amounts, counts, action labels and temporal relationships in each specified state. Show the same single selected visual system throughout. Any paired/triple frames depict STATES OF ONE DESIGN, not alternative ideas. Normal functions exist offscreen; do not add accounts, cloud sync, exports, history charts, achievements, AI, workout tracking or new navigation.
+Prefer a plain neutral light-gray presentation background, generous margins and realistic front-on flat UI containers. No decorative pictures, brand logo artwork, wallpaper scenery, arrows linking screens, device bezels, browser chrome, giant headings or marketing copy. Don't put cards inside cards; use spacing and thin native separators. Do not copy the selected reference as an inset thumbnail. Render only the requested new screen/state views.
+Every literal UI string below must be correctly spelled Chinese. Text legibility and unclipped layout are essential. Use specified canvas dimensions, preserving the natural window and popover proportions rather than stretching to fill the canvas.
+
+All menu-bar views must preserve this compact hierarchy from the attached reference:
+Header "水序", smaller "Aqmino", small trailing "…".
+"今日已记录" and a left-aligned large numeric total with smaller "ml", then record count.
+One readable reminder-status area with an appropriate small native SF-like symbol, not a large illustration; replace its content per state.
+"记录一杯", followed by three immediate record action buttons "150 ml", "250 ml", "350 ml"; 250 ml subtly teal. These are single-click save actions, not choices followed by another record button.
+"自定义…" as a small trailing action below. A slim native "暂停提醒…" or state-appropriate recovery/enable row. Bottom row "今日记录" and "设置…" stays stable.
+The status action belongs with the explanation. Keep long status strings wrapped naturally, no clipped text. Retain manual recording when reminders are paused, off, permission denied, outside hours, or goal completed. Exception: data unavailable disables saving, and an in-progress save disables duplicate submit.
+For a state comparison board: canvas 1536 × 1024 px; show three native popovers side by side, at identical logical scale, approximate panel width 420–440 px, comfortable 36–52 px gaps and about 72–100 px outer margins. Align main panel tops. A tiny neutral annotation above each can name its STATE exactly as specified, outside the app UI. Each has a small monochrome droplet menu-bar anchor and the specified local date/time. Avoid excessive label rows or feature inventory. A sheet/open-menu state may show a native overlay anchored to the appropriate panel.
+
+Asset: menu-daily-recording-states. Canvas 1536 × 1024 px.
+Three STATES of the selected compact popover: "正常计时", "记录成功", "暂无记录", in that left-to-right order.
+For all three, mock scenario local date/time 2026-10-12 Monday at 10:30; each small menu-bar fragment shows "10月12日 周一 10:30". This is a deliberately simulated next-working-day scenario relative to the current-date anchor 2026-10-10.
+LEFT "正常计时":
+Total "750 ml", "3 次记录"; last recorded cup was 10:00.
+Main reminder status "下一次提醒 10:45"; supporting "工作日 09:00–18:00".
+All normal recording actions and "暂停提醒…" visible.
+MIDDLE "记录成功":
+User just saved a 250 ml cup at 10:30, so total MUST be "1000 ml", "4 次记录".
+Reminder status MUST now be "下一次提醒 11:15"; record success resets the full 45-minute interval.
+Between custom and pause action, a slim inline native success feedback "已记录 250 ml · 撤销". "撤销" is a small clickable text action. No modal or giant banner, no auto-dismissed popover. This feedback lasts 10 seconds, but do not show a timer.
+All other actions remain normal.
+RIGHT "暂无记录":
+Total "0 ml", "0 次记录".
+Tiny secondary helper "今天还没有记录".
+Reminder status "下一次提醒 10:45", supporting "工作日 09:00–18:00"; app launched at 10:00, even with no records.
+Recording actions invite a first cup. No arbitrary progress ring or target.
+Use the same hierarchy, spacing and quiet footer. Focus on scan-and-record, no records list or stats cards. Make all times, counts and amounts correct and clearly readable.

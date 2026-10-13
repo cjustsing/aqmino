@@ -1,0 +1,9 @@
+Use case: precise-object-edit, UI action-state correction.
+Edit the attached 1536 × 1024 Aqmino · 水序 native macOS three-state board. Preserve all layout, geometry, typography, wording, values, dates, times, button labels, custom-input modal, color palette, window material and background.
+Make ONLY this targeted control-state correction:
+In BOTH the MIDDLE "保存失败" and RIGHT "读取失败" popovers, make the lower "暂停提醒…" row clearly DISABLED, using the same muted gray treatment as the already disabled record capacity buttons. Gray its pause icon, text and chevron. Keep its position and label.
+These pause changes need a persistent write, so they cannot look active while storage is unavailable or a save is pending retry.
+Keep MIDDLE "重试" active and its "今日记录" and "设置…" footer active (cached confirmed records remain readable).
+Keep RIGHT "重新读取", "恢复有效备份…" and "设置…" active; its "今日记录" remains disabled. Keep the unknown amount as "— ml" and don't introduce fake totals.
+The LEFT custom input sheet and all its parent controls stay exactly as in the source, no changes.
+Dates are mock 2026-10-12 Monday at 10:30, current-date anchor 2026-10-10 Saturday Asia/Shanghai; preserve all visible date/weekday labels. No other edits.

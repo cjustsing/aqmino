@@ -1,0 +1,218 @@
+{
+  "version": "v0.2",
+  "created_date": "2026-10-10",
+  "product": "Aqmino · 水序",
+  "status": "visual_refinement_complete",
+  "generator": "built-in image_gen",
+  "selected_direction": {
+    "displayed_option": 3,
+    "name": "紧凑秩序",
+    "source_image": "../03-compact-overview.png",
+    "sha256": "23202590e81cdc10f0227d323a81271b1ce073cb50540634ec30ee76fc8c6c0e",
+    "human_selection": "我更喜欢第 3 套，按这个方向继续细化，补齐其他设置页和菜单栏的不同状态。"
+  },
+  "current_date_anchor": "2026-10-10",
+  "timezone": "Asia/Shanghai",
+  "working_day_scenario": "2026-10-12T10:30:00+08:00",
+  "actual_user_data": false,
+  "asset_count": 9,
+  "settings_page_count": 3,
+  "settings_state_count": 6,
+  "menu_state_count": 18,
+  "assets": [
+    {
+      "id": "settings-records",
+      "title": "记录与目标",
+      "group": "settings",
+      "image_file": "settings-records-targets.png",
+      "frames_left_to_right": [
+        "settings-goal-off",
+        "settings-goal-on"
+      ],
+      "prompt_file": "prompts/settings-records.txt",
+      "original_generated_file": "exec-5120695a-c51f-41bd-b403-caa427039bd3.png",
+      "reference_image": "../03-compact-overview.png",
+      "width_px": 1536,
+      "height_px": 1024,
+      "bytes": 1288191,
+      "sha256": "0b8d204b19962351be517a1fb008b59a86354a9b197e17179b671b577317255d",
+      "generation_reference_images": [
+        "../03-compact-overview.png"
+      ]
+    },
+    {
+      "id": "settings-general",
+      "title": "通用",
+      "group": "settings",
+      "image_file": "settings-general.png",
+      "frames_left_to_right": [
+        "settings-startup-off",
+        "settings-startup-approval"
+      ],
+      "prompt_file": "prompts/settings-general.txt",
+      "original_generated_file": "exec-943e64fc-8b80-4311-8dc4-30771d738843.png",
+      "reference_image": "../03-compact-overview.png",
+      "width_px": 1536,
+      "height_px": 1024,
+      "bytes": 1492634,
+      "sha256": "819897c8e8f8e25fc0db0f60d20b8fb24bfb63492e6d6c373ec0f1309dbe397a",
+      "generation_reference_images": [
+        "../03-compact-overview.png"
+      ]
+    },
+    {
+      "id": "settings-data",
+      "title": "数据",
+      "group": "settings",
+      "image_file": "settings-data.png",
+      "frames_left_to_right": [
+        "settings-data-resting",
+        "settings-data-confirm"
+      ],
+      "prompt_file": "prompts/settings-data.txt",
+      "original_generated_file": "exec-866b41fd-3b2c-4338-b297-582015f5e150.png",
+      "reference_image": "../03-compact-overview.png",
+      "width_px": 1536,
+      "height_px": 1024,
+      "bytes": 1305944,
+      "sha256": "98d456317257dba15ddd47c1338bc4d8dabadf5ca8848a13f522a729e318130a",
+      "generation_reference_images": [
+        "../03-compact-overview.png"
+      ]
+    },
+    {
+      "id": "menu-daily",
+      "title": "日常记录",
+      "group": "menu",
+      "image_file": "menu-daily.png",
+      "frames_left_to_right": [
+        "menu-normal",
+        "menu-record-success",
+        "menu-empty"
+      ],
+      "prompt_file": "prompts/menu-daily.txt",
+      "original_generated_file": "exec-02313a2c-3d3f-44bd-b351-999bfb454b24.png",
+      "reference_image": "../03-compact-overview.png",
+      "width_px": 1536,
+      "height_px": 1024,
+      "bytes": 1445320,
+      "sha256": "e31228df5fa9f8fcd0c59b03dfa79847b45cb583a0091429472881f5cf448315",
+      "generation_reference_images": [
+        "../03-compact-overview.png"
+      ]
+    },
+    {
+      "id": "menu-pause",
+      "title": "暂停",
+      "group": "menu",
+      "image_file": "menu-pause.png",
+      "frames_left_to_right": [
+        "menu-pause-options",
+        "menu-timed-pause",
+        "menu-today-pause"
+      ],
+      "prompt_file": "prompts/menu-pause.txt",
+      "original_generated_file": "exec-d302d375-4dfa-4e11-b0c1-1d4dde8680f2.png",
+      "reference_image": "../03-compact-overview.png",
+      "width_px": 1536,
+      "height_px": 1024,
+      "bytes": 1348366,
+      "sha256": "5b9f019b363e63812466f8d587487b767af871778e90a556c1640532076ea9be",
+      "generation_reference_images": [
+        "../03-compact-overview.png"
+      ]
+    },
+    {
+      "id": "menu-permissions",
+      "title": "通知能力",
+      "group": "menu",
+      "image_file": "menu-permissions.png",
+      "frames_left_to_right": [
+        "menu-not-determined",
+        "menu-notifications-denied",
+        "menu-notification-center-only"
+      ],
+      "prompt_file": "prompts/menu-permissions.txt",
+      "original_generated_file": "exec-5497a8ec-45aa-4e4f-8bd3-90eadb912ec4.png",
+      "reference_image": "../03-compact-overview.png",
+      "width_px": 1536,
+      "height_px": 1024,
+      "bytes": 1504453,
+      "sha256": "743d0a69d098c694d0d5f273914e2c04d1e55772772e8b822a7a7dbea9e374cf",
+      "generation_reference_images": [
+        "../03-compact-overview.png"
+      ]
+    },
+    {
+      "id": "menu-eligibility",
+      "title": "提醒资格与目标",
+      "group": "menu",
+      "image_file": "menu-eligibility-goal.png",
+      "frames_left_to_right": [
+        "menu-reminders-off",
+        "menu-outside-schedule",
+        "menu-goal-reached"
+      ],
+      "prompt_file": "prompts/menu-eligibility.txt",
+      "revision_prompt_file": "prompts/menu-eligibility-revision.txt",
+      "original_generated_file": "exec-28a1308b-2bb8-45b9-b133-35613ef89b4f.png",
+      "reference_image": "original generated board, corrected with image_gen",
+      "width_px": 1536,
+      "height_px": 1024,
+      "bytes": 1543701,
+      "sha256": "4916dfdff3d6d79f5a52e27fb16ccfc568d0a1aaa01a49960b589030f5369316",
+      "generation_reference_images": [
+        "../03-compact-overview.png"
+      ],
+      "revision_reference_images": [
+        "exec-18462ec8-6683-405a-bb85-1803fba3c71f.png"
+      ]
+    },
+    {
+      "id": "menu-reminder-events",
+      "title": "提醒事件",
+      "group": "menu",
+      "image_file": "menu-reminder-events.png",
+      "frames_left_to_right": [
+        "menu-snoozed",
+        "menu-due-inline",
+        "menu-dispatch-failed"
+      ],
+      "prompt_file": "prompts/menu-reminder-events.txt",
+      "original_generated_file": "exec-d0097688-c863-45d2-ae39-5eaa8a6af700.png",
+      "reference_image": "../03-compact-overview.png",
+      "width_px": 1536,
+      "height_px": 1024,
+      "bytes": 1447094,
+      "sha256": "f8b06eee4bcf47c6ca47537f1fba3697ad4a61edb0889cd519165bc0dfb5af48",
+      "generation_reference_images": [
+        "../03-compact-overview.png"
+      ]
+    },
+    {
+      "id": "menu-storage",
+      "title": "自定义与数据异常",
+      "group": "menu",
+      "image_file": "menu-custom-storage.png",
+      "frames_left_to_right": [
+        "menu-custom-input",
+        "menu-save-failed",
+        "menu-read-failed"
+      ],
+      "prompt_file": "prompts/menu-storage.txt",
+      "revision_prompt_file": "prompts/menu-storage-revision.txt",
+      "original_generated_file": "exec-889b3dbd-f797-4692-bde9-5d1a0d24a03e.png",
+      "reference_image": "original generated board, corrected with image_gen",
+      "width_px": 1536,
+      "height_px": 1024,
+      "bytes": 1564307,
+      "sha256": "e09309993ec878cf788d716c5210c688bd479bcd8ff25009e6af207969c8758e",
+      "generation_reference_images": [
+        "../03-compact-overview.png"
+      ],
+      "revision_reference_images": [
+        "exec-fae16c61-51f1-4b32-b1d7-d0fc3dcc3c52.png"
+      ]
+    }
+  ]
+}

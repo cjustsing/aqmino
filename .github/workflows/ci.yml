@@ -1,0 +1,56 @@
+name: macOS CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: macos-ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  checks:
+    name: Build and test
+    runs-on: macos-15
+    timeout-minutes: 20
+    env:
+      TZ: Asia/Shanghai
+    steps:
+      - name: Check out source
+        uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5
+        with:
+          persist-credentials: false
+      - name: Show toolchain
+        run: |
+          swift --version
+          xcodebuild -version
+      - name: Run unit tests
+        run: python3 scripts/check.py
+      - name: Keep live-clock checks away from midnight
+        run: |
+          python3 - <<'PY'
+          import datetime
+          import os
+          if datetime.datetime.now().hour == 23:
+              with open(os.environ["GITHUB_ENV"], "a") as environment:
+                  environment.write("TZ=UTC\n")
+          PY
+      - name: Check application state and system adapters
+        run: |
+          python3 scripts/check-app-model.py
+          python3 scripts/check-schedule-recovery.py
+          python3 scripts/check-login-item.py
+      - name: Check native views and window commands
+        run: |
+          python3 scripts/check-settings-view.py
+          python3 scripts/check-window-commands.py
+          python3 scripts/check-menu-panel.py
+      - name: Build release application
+        run: python3 scripts/build-macos.py --configuration release
+      - name: Verify release packaging
+        run: python3 scripts/package-macos-release.py
